@@ -37,8 +37,9 @@ const StoreMixin = Ember.Mixin.create({
 
     resArray.forEach(res => {
       if (res && (id = res.get('id'))) {
-        const type = this.modelFor(res.constructor.modelName);
-        const adapter = this.adapterFor(res.constructor.modelName);
+        const modelName = res.get('constructor.modelName') || res._internalModel.modelName;
+        const type = this.modelFor(modelName);
+        const adapter = this.adapterFor(modelName);
         if (adapter instanceof SailsSocketAdapter) {
           adapter._scheduleSubscribe(type, id);
         }
