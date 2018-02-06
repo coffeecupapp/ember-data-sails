@@ -1,6 +1,6 @@
 {
-  "name": "bc-ember-data-sails",
-  "version": "0.0.23",
+  "name": "ember-data-sailsjs",
+  "version": "0.0.24",
   "description": "The default blueprint for ember-cli addons.",
   "keywords": [
     "ember-addon"
@@ -11,7 +11,7 @@
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "https://github.com/brickclick/ember-data-sails",
+  "repository": "https://github.com/gutschik/ember-data-sails",
   "scripts": {
     "build": "ember build",
     "start": "ember server",
