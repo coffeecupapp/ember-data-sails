@@ -69,15 +69,6 @@ export default SailsBaseAdapter.extend({
 	},
 
 	/**
-	 * @since 0.0.11
-	 * @method buildURL
-	 * @inheritDoc
-	 */
-	buildURL: function (type, id, record) {
-		return this._super(type, id, record);
-	},
-
-	/**
 	 * Whether we should subscribe to a given model or not
 	 * By default it subscribe to any model, tho it's better to optimize by setting up a filter here
 	 * so that it does not ask the server for subscription on unneeded stuff
